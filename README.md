@@ -1,26 +1,35 @@
 # bookmarks
-"Bookmarks" busca um aplicativo Rails para sua lista de best-sellers. Os livros são classificados por rank na página principal. Ao clicar em um livro, os usuários são direcionados para uma página onde podem ler análises editoriais.
-# README
+Bookmarks é um aplicativo Rails para demonstrar os seus livros favoritos. Atualmente ele mostra o ranking dos livros cadastrados no banco e a review dos mesmos.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Instalação
+Siga as instruções abaixo para executar o projeto localmente.
 
-Things you may want to cover:
+Ruby Version: 3.1.3
+Rails Version: 7.0.4.3
 
-* Ruby version
+Clone o repositório:
 
-* System dependencies
+```git clone https://github.com/viniciusdotto/bookmarks.git```
 
-* Configuration
+Instale as dependências:
 
-* Database creation
+```bundle install```
 
-* Database initialization
+Crie o banco de dados:
 
-* How to run the test suite
+```rails db:create```
 
-* Services (job queues, cache servers, search engines, etc.)
+Execute as migrações do banco de dados:
 
-* Deployment instructions
+```rails db:migrate```
 
-* ...
+Execute as seeds do banco de dados:
+
+```rails db:seed```
+
+Inicie o servidor:
+
+```rails server```
+
+Acesse o aplicativo no seu navegador:
+http://localhost:3000
